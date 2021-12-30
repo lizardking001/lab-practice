@@ -1,13 +1,9 @@
-function palindromeCheck (str){
-    let strCheck = str.split('').reverse().join('');
-    if (strCheck == str) {
-        return true;
-    } else {
-        return false;
+function palindromeCheck (str) {
+    for (let a = 0, b = str.length - 1; a < b; a++, b--) {
+         if(str[a] != str[b])
+           return false;
     }
+    return true;
 }
 
-let test1 = console.log (palindromeCheck('aaaaaa'));
-let test2 = console.log (palindromeCheck('abcd'));
-let test3 = console.log (palindromeCheck('abbc'));
-let test4 = console.log (palindromeCheck('abba'));
+
