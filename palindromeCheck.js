@@ -7,3 +7,4 @@ function palindromeCheck (str) {
 }
 
 
+module.exports = palindromeCheck;
