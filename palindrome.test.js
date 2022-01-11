@@ -9,7 +9,10 @@ test.each([
 
 
 
-test('check other type', ()=>{
+test.each([
+  [1],
+  [true]
+])('check other type', ()=>{
 expect( ()=> {
   palindromeCheck();
 }).toThrow("The word type is " + "<" + typeof str + ">" + ", but should be string");
