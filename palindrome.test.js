@@ -9,13 +9,11 @@ test.each([
 
 
 
-// test.each([
-//   [false, Error],
-//   [1, Error],
-//   [undefined, Error]
-// ])('check other types', (str, Error) => {
-//   expect(palindromeCheck(str, Error)).toBe(Error);
-// });
+test('check other type', ()=>{
+expect( ()=> {
+  palindromeCheck();
+}).toThrow("The word type is " + "<" + typeof str + ">" + ", but should be string");
+});
 
 
 
